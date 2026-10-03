@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің кәсіби веб-парақшам</title>
+    <style>
+        /* Негізгі стиль */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 25px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Навигация */
+        nav {
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section */
+        section {
+            padding: 40px 10%;
+        }
+
+        /* Басты бет */
+        .about {
+            text-align: center;
+        }
+
+        .about img {
+            width: 250px;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Дағдылар мен жобалар */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Байланыс формасы */
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        button {
+            padding: 10px 25px;
+            border: 1px solid #222;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #eee;
+        }
+        #message {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Адаптивті дизайн */
+        @media (max-width: 700px) {
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            section {
+                padding: 30px 5%;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Жоғарғы бөлік -->
+    <header>
+        <h1>Менің кәсіби веб-парақшам</h1>
+
+        <p>
+            Информатика мамандығының 3-курс студентімін.
+            Frontend бағытында дамып келемін.
+        </p>
+    </header>
+
+
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="#home">Басты бет</a></li>
+            <li><a href="#about">Мен туралы</a></li>
+            <li><a href="#skills">Менің дағдыларым</a></li>
+            <li><a href="#projects">Жобаларым</a></li>
+            <li><a href="#contact">Байланыс</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- 1-секция -->
+    <section id="home" class="about">
+
+        <h2>Қош келдіңіз!</h2>
+
+        <p>
+            Бұл — менің жеке кәсіби веб-парақшам.
+        </p>
+
+        <p>
+            Мен HTML, CSS және JavaScript технологияларын
+            үйреніп, Frontend бағытында білімімді дамытып келемін.
+        </p>
+
+        <img src="https://pictures.pibig.info/uploads/posts/2023-04/1681356458_pictures-pibig-info-p-student-risunok-instagram-1.jpg" alt="Зухраның суреті">
+    </section>
+    <!-- 2-секция -->
+    <section id="about">
+        <h2>Мен туралы</h2>
+        <p>
+            Мен информатика мамандығының 3-курс студентімін.
+            Веб-технологияларға және бағдарламалауға қызығамын.
+        </p>
+        <p>
+            Болашақта заманауи және ыңғайлы веб-сайттар
+            жасауды жоспарлаймын.
+        </p>
+    </section>
+    <!-- 3-секция -->
+    <section id="skills">
+        <h2>Менің дағдыларым</h2>
+        <div class="cards">
+            <div class="card">
+                <h2>HTML</h2>
+                <p>
+                    HTML веб-беттің құрылымын жасау үшін қолданылады.
+                </p>
+            </div>
+            <div class="card">
+                <h2>CSS</h2>
+                <p>
+                    CSS веб-беттің түсін, өлшемін және дизайнын
+                    өзгертуге мүмкіндік береді.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>JavaScript</h2
+                <p> JavaScript веб-бетке интерактивтілік қосады.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Box Model</h2>
+
+                <p>
+                    Box Model margin, border, padding және
+                    content бөліктерінен тұрады.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 4-секция -->
+    <section id="projects">
+
+        <h2>Жобаларым</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Жеке веб-сайт</h2>
+
+                <p>
+                    HTML және CSS көмегімен жасалған
+                    жеке веб-парақша.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h2>Интерактивті жоба</h2>
+
+                <p>
+                    JavaScript арқылы батырмалар мен
+                    формалар қолданылған веб-жоба.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 5-секция -->
+    <section id="contact">
+
+        <h2>Байланыс</h2>
+
+        <p>
+            Менімен байланысу үшін төмендегі форманы толтырыңыз.
+        </p>
+
+
+        <form id="contactForm">
+
+            <label for="name">
+                Аты-жөніңіз:
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Аты-жөніңіз"
+            >
+
+            <br><br>
+
+
+            <label for="email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="example@gmail.com"
+            >
+
+            <br><br>
+
+
+            <label for="phone">
+                Телефон нөмірі:
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="+7 700 000 00 00"
+            >
+
+            <br><br>
+
+
+            <label for="messageText">
+                Хабарлама:
+            </label>
+
+            <textarea
+                id="messageText"
+                placeholder="Хабарламаңызды жазыңыз"
+            ></textarea>
+
+            <br><br>
+
+
+            <button type="button" onclick="sendMessage()">
+                Жіберу
+            </button>
+
+        </form>
+
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Төменгі бөлік -->
+    <footer>
+
+        <p>
+            © 2026 Менің кәсіби веб-парақшам
+        </p>
+
+        <p>
+            HTML • CSS • JavaScript
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+
+        function sendMessage() {
+
+            let name =
+                document.getElementById("name").value;
+
+            let email =
+                document.getElementById("email").value;
+
+            let phone =
+                document.getElementById("phone").value;
+
+            let message =
+                document.getElementById("messageText").value;
+
+
+            /* Бос өрістерді тексеру */
+            if (
+                name === "" ||
+                email === "" ||
+                phone === "" ||
+                message === ""
+            ) {
+                document.getElementById("message").textContent =
+                    "Барлық өрісті толтырыңыз!";
+
+            }
+
+            /* Барлық мәлімет енгізілген жағдайда */
+            else {
+
+                document.getElementById("message").textContent =
+                    "Рақмет, " + name +
+                    "! Хабарламаңыз қабылданды.";
+
+            }
+
+        }
+    </script>
+</body>
+</html>
